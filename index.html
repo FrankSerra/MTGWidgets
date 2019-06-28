@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Coinflips</title>
+</head>
+<body>
+	<script>
+	function dies() {
+		return (Math.random() * 10) > 4;
+	}
+	
+	function flip() {
+		var number = document.getElementById("number").value;
+		var div = document.getElementById("flips");		
+		div.innerHTML = "Results:";
+		
+		var list = document.createElement("ol");
+		
+		var i;
+		for(i=0; i<number; i++) {
+			var item = document.createElement("li");
+			var text;
+			if(dies())
+				text = document.createTextNode("Dead!");
+			else
+				text = document.createTextNode("---")
+			item.appendChild(text);
+			list.appendChild(item);
+		}
+		div.appendChild(list);
+	}
+	</script>
+	
+	Number of creatures: <input type="number" ID="number" min="1" max="100" />
+	<input type="button" onclick="flip()" value="Flip" />
+	
+	<div id="flips" style="margin-top: 20px;">
+	</div>
+</body>
+</html>
