@@ -1,0 +1,7 @@
+label {
+	font-size: 150%;
+}
+
+input[type=checkbox] {
+	transform: scale(2);
+}
