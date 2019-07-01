@@ -1,8 +1,4 @@
-function dies() {
-    return (Math.random() * 10) > 4;
-}
-
-function flip() {
+function showstopper_flip() {
     var number = document.getElementById("number").value;
     var div = document.getElementById("flips");	
     div.innerHTML = "";	
@@ -20,7 +16,7 @@ function flip() {
         var item = document.createElement("li");
 
         var text;
-        if(dies()) {
+        if((Math.random() * 10) > 4) {
             item.setAttribute("class", "list-group-item list-group-item-danger");
             text = document.createTextNode(i + ". Dies!");
         }
