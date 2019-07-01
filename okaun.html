@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+
+	<title>Okaun's Power</title>
+</head>
+<body>	
+	<script src="script/okaun.js"></script>
+	
+	<div w3-include-html="includes/navbar.html"></div>
+	
+	<div class="container mt-3">
+		<h3>Okaun, Eye of Chaos gets big!</h3>
+		<div class="container mt-2">
+			<label for="number">Number of coin flip wins:</label>
+			<input type="number" ID="number" min="0" max="999" />
+			<br />
+			<label for="power">Okaun starts as a:</label>
+			<input type="number" ID="power" min="0" max="999" value="3" /> / <input type="number" ID="toughness" min="1" max="999" value="3" />
+			<br />
+			<input type="button" class="btn btn-primary" onclick="okaun_calculate()" value="Calculate" />
+		</div>
+	
+		<div id="results" class="container" style="margin-top: 20px;"></div>
+	</div>
+	
+	<!-- html includes -->
+	<script src="script/include_html.js"></script>
+	<script>
+	includeHTML();
+	</script>
+</body>
+</html>

@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
 
 	<title>MTG Widgets</title>
 </head>
 <body>
+<div w3-include-html="includes/navbar.html"></div>
 	<div class="container mt-3">
 		<h2>Choose widget:</h2>
 		<ul class="list-group">
 			<li class="list-group-item"><a href="showstopper.html">Rakdos, the Showstopper coin flips</a></li>
+			<li class="list-group-item"><a href="okaun.html">Okaun, Eye of Chaos power calculator</a></li>
 		</ul>
 	</div>
+	
+	<!-- scripts and html includes -->
+	<script src="script/showstopper_script.js"></script>
+	<script src="script/include_html.js"></script>
+	<script>
+	includeHTML();
+	</script>
 </body>
 </html>
