@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	
+	<title>Storm & Mana</title>
+</head>
+<body>	
+	<script src="script/storm.js"></script>
+	
+	<div w3-include-html="includes/navbar.html"></div>
+	
+	<div class="container mt-3">
+		<input type="button" class="btn btn-danger" value=" - " />
+		<span class="text-center" ID="W">0</span>
+		<input type="button" class="btn btn-success" value="+" />
+		<input type="button" class="btn btn-danger" value=" - " />
+		<span class="text-center" ID="U">0</span>
+		<input type="button" class="btn btn-success" value="+" />
+		<input type="button" class="btn btn-primary" onclick="storm_reset()" value="Reset" />	
+	</div>
+	
+	<!-- html includes -->
+	<script src="script/jquery-3.3.1.slim.min.js"></script>
+	<script src="script/popper.min.js"></script>
+	<script src="script/bootstrap.min.js"></script>
+	<script src="script/include_html.js"></script>
+	<script>
+		includeHTML();
+	</script>
+</body>
+</html>
