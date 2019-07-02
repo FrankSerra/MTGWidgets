@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="style/bootstrap.min.css" />
+	<link rel="stylesheet" href="style/storm.css" />
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	
 	<title>Storm & Mana</title>
@@ -15,13 +16,52 @@
 	<div w3-include-html="includes/navbar.html"></div>
 	
 	<div class="container mt-3">
-		<input type="button" class="btn btn-danger" value=" - " />
-		<span class="text-center" ID="W">0</span>
-		<input type="button" class="btn btn-success" value="+" />
-		<input type="button" class="btn btn-danger" value=" - " />
-		<span class="text-center" ID="U">0</span>
-		<input type="button" class="btn btn-success" value="+" />
-		<input type="button" class="btn btn-primary" onclick="storm_reset()" value="Reset" />	
+		<div>
+			<img src="images/mana-w.png" />
+			<input type="button" class="btn btn-danger" value=" - " onclick="minus('W');" />			
+			<span class="text-center mana-amount" ID="W">0</span>
+			<input type="button" class="btn btn-success" value="+" onclick="plus('W')"/>
+		</div>
+		<div>
+			<img src="images/mana-u.png" />
+			<input type="button" class="btn btn-danger" value=" - " onclick="minus('U');" />			
+			<span class="text-center mana-amount" ID="U">0</span>
+			<input type="button" class="btn btn-success" value="+" onclick="plus('U')"/>
+		</div>
+		<div>
+			<img src="images/mana-b.png" />
+			<input type="button" class="btn btn-danger" value=" - " onclick="minus('B');" />			
+			<span class="text-center mana-amount" ID="B">0</span>
+			<input type="button" class="btn btn-success" value="+" onclick="plus('B')"/>
+		</div>
+		<div>
+			<img src="images/mana-r.png" />
+			<input type="button" class="btn btn-danger" value=" - " onclick="minus('R');" />			
+			<span class="text-center mana-amount" ID="R">0</span>
+			<input type="button" class="btn btn-success" value="+" onclick="plus('R')"/>
+		</div>
+		<div>
+			<img src="images/mana-g.png" />
+			<input type="button" class="btn btn-danger" value=" - " onclick="minus('G');" />			
+			<span class="text-center mana-amount" ID="G">0</span>
+			<input type="button" class="btn btn-success" value="+" onclick="plus('G')"/>
+		</div>
+		<div>
+			<img src="images/mana-c.png" />
+			<input type="button" class="btn btn-danger" value=" - " onclick="minus('C');" />			
+			<span class="text-center mana-amount" ID="C">0</span>
+			<input type="button" class="btn btn-success" value="+" onclick="plus('C')"/>
+		</div>
+		<div>
+			<img src="images/mana-e.png" />
+			<input type="button" class="btn btn-danger" value=" - " onclick="minus('E');" />			
+			<span class="text-center mana-amount" ID="E">0</span>
+			<input type="button" class="btn btn-success" value="+" onclick="plus('E')"/>
+		</div>
+	</div>
+
+	<div class="container">
+		<input type="button" class="btn btn-primary ml-3" onclick="storm_reset()" value="Reset" />	
 	</div>
 	
 	<!-- html includes -->

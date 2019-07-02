@@ -1,0 +1,19 @@
+span.mana-amount {
+    font-size: 150%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@media only screen {
+    @media (max-width: 767px) {
+        img {
+            width: 64px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        img {
+            width: 96px;
+        }
+    }
+} 
