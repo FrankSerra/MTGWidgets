@@ -5,12 +5,14 @@ span.mana-amount {
 }
 
 @media only screen {
+    /*Mobile*/
     @media (max-width: 767px) {
         img {
             width: 64px;
         }
     }
 
+    /*Desktop*/
     @media (min-width: 768px) {
         img {
             width: 96px;

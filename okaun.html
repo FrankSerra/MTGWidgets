@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="style/bootstrap.min.css" />
+	<link rel="stylesheet" href="style/okaun.css" />
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	
 	<title>Okaun's Power</title>
@@ -17,11 +18,12 @@
 	<div class="container mt-3">
 		<h3>Okaun, Eye of Chaos gets big!</h3>
 		<div class="container mt-2">
-			<label for="number">Number of coin flip wins:</label>
-			<input type="number" ID="number" min="0" max="999" />
-			<br />
 			<label for="power">Okaun starts as a:</label>
 			<input type="number" ID="power" min="0" max="999" value="3" /> / <input type="number" ID="toughness" min="1" max="999" value="3" />
+			<br />
+			<label for="number">Number of coin flip wins:</label>
+			<br class="desktop-hide" />
+			<input type="number" ID="number" min="0" max="999" />
 			<br />
 			<input type="button" class="btn btn-primary" onclick="okaun_calculate()" value="Calculate" />
 		</div>
