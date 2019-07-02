@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="style/bootstrap.min.css" />
+	<link rel="stylesheet" href="style/showstopper.css" />
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	
 	<title>Coinflips</title>
@@ -15,7 +16,9 @@
 		<h3>Rakdos, the Showstopper enters the battlefield!</h3>
 		<div class="container mt-2">
 			<label for="number">Number of creatures:</label>
+			<br class="desktop-hide" />
 			<input type="number" ID="number" min="1" max="100" />
+			<br class="desktop-hide" />
 			<input type="button" class="btn btn-primary" onclick="showstopper_flip()" value="Flip" />
 		</div>
 	
